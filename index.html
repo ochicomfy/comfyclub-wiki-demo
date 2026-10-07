@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ComfyClub 非公式Wiki｜デモ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="pill">DEMO / UNOFFICIAL WIKI</span>
+    <h1>ComfyClub<br><b>非公式Wiki</b></h1>
+    <p>フレーム・バッジ・吹き出し・称号の「どこで手に入る？」をイベント情報から逆引き。</p>
+  </div>
+</header>
+<nav><div class="wrap nav">
+<a href="#items">アイテム逆引き</a><a href="#events">イベント</a><a href="#about">このWikiについて</a>
+<button id="themeToggle" class="theme-toggle" type="button" aria-label="表示テーマを切り替える">☾</button></div></nav>
+
+<main class="wrap">
+<section id="items">
+<div class="searchbox">
+  <div><small>ITEM FINDER</small><h2>アイテムから探す</h2></div>
+  <div class="search-control"><label for="q">アイテム名・イベント名で検索</label><input id="q" type="search" placeholder="例：天秤座 / お月見 / 新人王"></div>
+</div>
+
+<div class="head"><div><small>ITEMS</small><h2>確認できたアイテム</h2></div>
+<div class="filter-control"><label for="kind">アイテムの種類</label><select id="kind"><option value="all">すべて</option><option>フレーム</option><option>バッジ</option><option>吹き出し</option><option>称号</option><option>入場通知</option></select></div></div>
+<p id="resultCount" class="result-count" role="status" aria-live="polite"></p>
+<div class="grid" id="itemGrid">
+
+<article class="card item" data-kind="フレーム" data-text="スーパー新人王 第5期 新人ライバー">
+<div class="item-visual"><img src="images/items/rookie_super.png" alt="スーパー新人王 フレーム"></div><h3>スーパー新人王 フレーム</h3><div class="tags"><span>フレーム</span><span>第5期新人戦</span></div>
+<p><b>入手：</b>第5期 新人ライバー応援イベント TOP1</p><p><b>期限：</b>永久</p>
+</article>
+<article class="card item" data-kind="フレーム" data-text="超新星ライバー 第5期 新人">
+<div class="item-visual"><img src="images/items/rookie_nova.png" alt="超新星ライバー フレーム"></div><h3>超新星ライバー フレーム</h3><div class="tags"><span>フレーム</span><span>第5期新人戦</span></div>
+<p><b>入手：</b>TOP2〜3</p><p><b>期限：</b>永久</p>
+</article>
+<article class="card item" data-kind="フレーム" data-text="輝く新人ライバー 第5期 新人">
+<div class="item-visual"><img src="images/items/rookie_shine.png" alt="輝く新人ライバー フレーム"></div><h3>輝く新人ライバー フレーム</h3><div class="tags"><span>フレーム</span><span>第5期新人戦</span></div>
+<p><b>入手：</b>TOP4〜10</p><p><b>期限：</b>永久</p>
+</article>
+
+<article class="card item" data-kind="フレーム" data-text="天秤座 星座 物語 ライバー">
+<div class="item-visual"><img src="images/items/libra_frame.png" alt="天秤座 フレーム"></div><h3>天秤座 フレーム</h3><div class="tags"><span>フレーム</span><span>星座の物語</span></div>
+<p><b>入手：</b>ライバー総合 TOP10</p><p><b>期限：</b>360日</p>
+</article>
+<article class="card item" data-kind="バッジ" data-text="天秤座 星座 物語 ライバー">
+<div class="item-visual"><img src="images/items/libra_badge.png" alt="天秤座 バッジ"></div><h3>天秤座 バッジ</h3><div class="tags"><span>バッジ</span><span>星座の物語</span></div>
+<p><b>入手：</b>ライバー総合 TOP10</p><p><b>期限：</b>永久</p>
+</article>
+<article class="card item" data-kind="称号" data-text="天秤座の守り人 星座 リスナー">
+<h3>「天秤座の守り人」</h3><div class="tags"><span>称号</span><span>星座の物語</span></div>
+<p><b>入手：</b>リスナー総合 TOP10</p><p><b>期限：</b>永久</p>
+</article>
+<article class="card item" data-kind="吹き出し" data-text="天秤座 星座 リスナー">
+<div class="item-visual"><img src="images/items/libra_bubble.png" alt="天秤座 吹き出し"></div><h3>天秤座 吹き出し</h3><div class="tags"><span>吹き出し</span><span>星座の物語</span></div>
+<p><b>入手：</b>リスナー総合 TOP10</p><p><b>期限：</b>360日</p>
+</article>
+
+<article class="card item" data-kind="フレーム" data-text="お月見 月光 うさぎ">
+<div class="item-visual"><img src="images/items/moon_frame.png" alt="お月見 フレーム"></div><h3>お月見 フレーム</h3><div class="tags"><span>フレーム</span><span>お月見</span></div>
+<p><b>入手：</b>トピック投稿で1日／総合TOP1〜3で360日／TOP4〜10で180日</p>
+</article>
+<article class="card item" data-kind="吹き出し" data-text="お月見 月光">
+<div class="item-visual"><img src="images/items/moon_bubble.png" alt="お月見 吹き出し"></div><h3>お月見 吹き出し</h3><div class="tags"><span>吹き出し</span><span>お月見</span></div>
+<p><b>入手：</b>総合TOP1〜3で360日／TOP4〜10で180日</p>
+</article>
+<article class="card item" data-kind="入場通知" data-text="お月見 月光">
+<h3>お月見 入場通知</h3><div class="tags"><span>入場通知</span><span>お月見</span></div>
+<p><b>入手：</b>月光ランキング デイリーTOP10</p><p><b>期限：</b>5日</p>
+</article>
+
+<article class="card item" data-kind="フレーム" data-text="お芋 秋 推し スイーツ">
+<div class="item-visual"><img src="images/items/sweetpotato_frame.png" alt="お芋 フレーム"></div><h3>お芋 フレーム</h3><div class="tags"><span>フレーム</span><span>秋の推しスイーツ</span></div>
+<p><b>入手：</b>デイリーTOP10で5日／総合TOP1〜3で360日／TOP4〜10で180日</p>
+</article>
+<article class="card item" data-kind="吹き出し" data-text="お芋 秋 推し スイーツ">
+<div class="item-visual"><img src="images/items/sweetpotato_bubble.png" alt="お芋 吹き出し"></div><h3>お芋 吹き出し</h3><div class="tags"><span>吹き出し</span><span>秋の推しスイーツ</span></div>
+<p><b>入手：</b>総合TOP1〜3で360日／TOP4〜10で180日</p>
+</article>
+<article class="card item" data-kind="フレーム" data-text="栗 秋 推し スイーツ">
+<div class="item-visual"><img src="images/items/chestnut_frame.png" alt="栗 フレーム"></div><h3>栗 フレーム</h3><div class="tags"><span>フレーム</span><span>秋の推しスイーツ</span></div>
+<p><b>入手：</b>デイリーTOP10で5日／総合TOP1〜3で360日／TOP4〜10で180日</p>
+</article>
+<article class="card item" data-kind="吹き出し" data-text="栗 秋 推し スイーツ">
+<div class="item-visual"><img src="images/items/chestnut_bubble.png" alt="栗 吹き出し"></div><h3>栗 吹き出し</h3><div class="tags"><span>吹き出し</span><span>秋の推しスイーツ</span></div>
+<p><b>入手：</b>総合TOP1〜3で360日／TOP4〜10で180日</p>
+</article>
+</div><p id="empty" hidden>該当するアイテムがありません。</p>
+</section>
+
+<section id="events">
+<div class="head"><div><small>EVENT ARCHIVE</small><h2>イベント一覧</h2></div></div>
+<div class="events">
+<details class="event" open><summary><img src="images/IMG_4272.jpeg" alt="" loading="lazy"><div><b>第5期 新人ライバー応援イベント</b><span>2026/10/1 00:00 ～ 10/10 23:59</span></div></summary>
+<div class="detail"><p>順位に応じてチケットと「スーパー新人王」「超新星ライバー」「輝く新人ライバー」のフレーム・バッジ・吹き出し・称号を獲得。</p>
+<table><tr><th>順位</th><th>チケット</th><th>区分</th></tr><tr><td>TOP1</td><td>30,000</td><td>スーパー新人王</td></tr><tr><td>TOP2</td><td>20,000</td><td rowspan="2">超新星ライバー</td></tr><tr><td>TOP3</td><td>15,000</td></tr><tr><td>TOP4〜10</td><td>12,000〜4,000</td><td>輝く新人ライバー</td></tr></table></div></details>
+
+<details class="event"><summary><img src="images/IMG_4271.jpeg" alt="" loading="lazy"><div><b>星座の物語・天秤座</b><span>2026/9/23 00:00 ～ 10/23 23:59</span></div></summary>
+<div class="detail"><p>指定ギフトで星座ポイントを獲得。ライバー／リスナーそれぞれにデイリー・総合ランキングあり。</p>
+<p><b>指定ギフト：</b>ふわ星 10、誕生日ケーキ 1,000、天秤座カード 3,000、誕生日カーニバル女／男 10,000。</p>
+<p><b>総合TOP10：</b>ライバーはフレーム360日＋バッジ永久、リスナーは称号「天秤座の守り人」永久＋吹き出し360日。</p></div></details>
+
+<details class="event"><summary><img src="images/IMG_4283.jpeg" alt="" loading="lazy"><div><b>お月見イベント</b><span>2026/9/21 00:00 ～ 9/30 23:59</span></div></summary>
+<div class="detail"><p><b>指定ギフト：</b>月見ボックス 2,500コイン、月光うさぎ 20コイン。月見ボックスは開封して獲得したギフト価格に応じて月光ポイント加算。</p>
+<p><b>月光デイリー：</b>TOP1〜10は4,000〜600チケット＋入場通知5日。</p>
+<p><b>総合：</b>TOP1〜3はフレーム・吹き出し360日、TOP4〜10は180日。</p></div></details>
+
+<details class="event"><summary><img src="images/IMG_4284.jpeg" alt="" loading="lazy"><div><b>秋の推しスイーツ大会</b><span>2026/9/11 00:00 ～ 9/20 23:59</span></div></summary>
+<div class="detail"><p>お芋派と栗派に分かれたランキングイベント。</p>
+<p><b>お芋：</b>ほくほくお芋 30／お芋魔法鍋 8,000。<br><b>栗：</b>ころころ栗 30／栗づくし 8,000。</p>
+<p><b>デイリー：</b>TOP10は4,000〜600チケット＋各派フレーム5日。<br><b>総合：</b>TOP1〜3はフレーム・吹き出し360日、TOP4〜10は180日。</p></div></details>
+</div>
+</section>
+
+<section id="about" class="about"><small>ABOUT</small><h2>このWikiについて</h2>
+<p>ComfyClubユーザー有志による非公式Wikiです。公式運営とは関係ありません。掲載情報はアプリ内イベント画面をもとに整理しています。イベント仕様は変更される可能性があります。</p>
+<p>アイテム画像は見やすさのためAIで補正した参考画像です。</p>
+</section>
+</main><button id="floatingThemeToggle" class="floating-theme-toggle" type="button" aria-label="表示テーマを切り替える">☾</button><div class="mobile-bottom">
+<a href="#items"><span aria-hidden="true">⌕</span>アイテム</a><a href="#events"><span aria-hidden="true">◇</span>イベント</a><a href="#about"><span aria-hidden="true">ⓘ</span>Wiki</a>
+</div>
+<footer>ComfyClub 非公式Wiki — Fan-made / Unofficial</footer>
+<script src="script.js"></script>
+
+
+</body></html>
