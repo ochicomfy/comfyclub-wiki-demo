@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+.AppleDouble/
+.LSOverride
+._*
+__MACOSX/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Codeの個人設定・履歴
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.code-workspace
+
+# 一時ファイル・バックアップ
+*.tmp
+*.swp
+*.swo
+*~
